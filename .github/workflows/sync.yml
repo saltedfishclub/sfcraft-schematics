@@ -28,4 +28,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Synchronize files to server
-      run: ./scripts/sync.sh
+      env:
+        API_ENDPOINT: ${{ secrets.API_ENDPOINT }}
+        SERVER_ID: ${{ secrets.SERVER_ID }}
+        TOKEN: ${{ secrets.TOKEN }}
+      run: |
+        cd scripts
+        chmod +x ./*.sh
+        sh ./sync.sh

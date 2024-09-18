@@ -1,9 +1,10 @@
 #!/bin/bash
+export PATH="$PATH:$(pwd)"
 RUN_CONVERT="java -jar ./Lite2Edit-1.2.0.jar --convert "
 
 mkdir -p ../result
 mkdir -p ../tmp
-echo $SERVER_ID
+
 process() {
   if [[ $1 == *.schem ]]; then
     echo "cp $1 ../result"
