@@ -7,7 +7,7 @@ mkdir -p ../tmp
 
 process() {
   if [[ $1 == *.schem ]]; then
-    echo "cp $1 ../result"
+    cp $1 ../result
   elif [[ $1 == *.litematic ]]; then
     cp "$1" ../tmp
     FILE=../tmp/$(basename "$1")
