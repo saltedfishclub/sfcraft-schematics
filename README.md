@@ -1,3 +1,6 @@
+# UPDATE
+请在游戏内使用 `/upload schematic` 命令上传投影。
+
 # sfcraft-schematics
 用于在创造游乐园内导入的结构文件，将会自动同步到服务器上
 
